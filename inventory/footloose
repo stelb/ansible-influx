@@ -1,0 +1,2 @@
+[footloose]
+influx-if0 ansible_connection=docker

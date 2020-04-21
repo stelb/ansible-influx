@@ -1,0 +1,14 @@
+cluster:
+  name: influx
+  privateKey: cluster-key
+machines:
+- count: 1
+  spec:
+    backend: docker
+    image: quay.io/footloose/centos7:0.6.0
+    networks:
+    - influx-net
+    name: if%d
+    portMappings:
+    - containerPort: 22
+    - containerPort: 8086
