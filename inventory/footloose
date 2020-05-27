@@ -1,2 +1,8 @@
-[footloose]
+[influx]
 influx-if0 ansible_connection=docker
+
+[server:children]
+influx
+
+[omd]
+checkmk-omd0 ansible_connection=docker
