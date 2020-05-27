@@ -8,6 +8,7 @@ machines:
     image: quay.io/footloose/centos7:0.6.0
     networks:
     - influx-net
+    - monitor-net
     name: if%d
     portMappings:
     - containerPort: 22
